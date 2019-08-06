@@ -1,0 +1,37 @@
+Adventure Puzzle Game
+
+Setup - rooms are black and white, walls are black, white, black.  Floor is white with black dots on the corners of the tiles. Doors are jagged at the bottom and a corner at the top.
+Protagonist - a circle with circle arms
+Signposts - telling the player what they need to solve and what how to play the game.
+
+On start: Font reading "Tap signposts to know what to do"
+
+Room 1 - Room has a bedlike item in it.  Uninteractable.  Player taps the signpost and it reads "Do as the signposts say to open the doors."  Door opens.
+
+Room 2 - 1 totem reading 'M'.  Signpost saying "Tap totem to make M -> R" 'M' and 'R' are in an icon font. When totem is taped it changes to 'R'.  When done the door opens.
+
+Room 3 - 2 totems reading 'M'.  Signpost saying "Tapping one totem triggers the totems next to it.  Make 'M' -> 'R'."  When the totem is tapped it changes from 'M' to 'R' and changes the totem next to it from 'M' to 'R'.  When both totems are 'R' the door opens.
+
+Room 4 - 3 totems reading 'M'.  Signpost saying "Make 'M' -> 'R'" totems in the following formation:
+
+MMM
+
+The totems cycle thusly: 'M' -> 'R' -> 'M'.  Tapping the left one will cycle the left and center one.  Taping the right one will cycle the right and center one.  Tapping the Center one will cycle all of them. Player should tap the center one right away.  Door opens.
+
+Room 5: 6 totems in the following formation:
+
+MMM
+MMM
+
+Signpost reads "Diagonals do not count.  Make 'M' -> 'R'
+
+Totems cycle thusly: 'M' -> 'R' -> 'M'
+
+Tapping 1,1 will cycle 1,1, 1,2 and 2,1.  
+Tapping 1,2 will cycle 1,1, 1,2, 1,3, and 2,2
+Tapping 1,3 will cycle 1,2 1,3 and 2,3
+Tapping 2,1 will cycle 1,1 2,1 and 2,2
+Tapping 2,2 will cycle 1,2 2,1, 2,2 and 2,3
+Tapping 2,3 will cycle 1,3 2,2 and 2,3
+
+Obvious solution is tap 1,1 then 2,3.  Door will open when all are 'R' 
